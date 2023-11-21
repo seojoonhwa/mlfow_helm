@@ -6,7 +6,7 @@ image:
   pullPolicy: IfNotPresent
 
 db:
-  backendStoreUri: postgresql://mlops:mlops@postgresql-ha-pgpool.postgresql:5432/mlflow
+  backendStoreUri: postgresql://mlflow:mlflow@postgresql-mlflow-service.mlflow.svc.cluster.local:5432/mlflow
 
 s3:
   endpointUrl: http://minio.kubeflow.svc.cluster.local:9000 
